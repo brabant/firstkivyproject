@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-11-29 09:41+0300\n"
-"PO-Revision-Date: 2016-11-29 09:41+0300\n"
+"POT-Creation-Date: 2016-12-02 11:46+0300\n"
+"PO-Revision-Date: 2016-12-02 11:46+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -15,39 +15,127 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: localization/.idea\n"
 
-#: program.py:156
+#: program.py:153
 msgid "First Kivy Project"
 msgstr "First Kivy Project"
 
-#: program.py:173
+#: program.py:170
 msgid "General settings"
 msgstr "General settings"
 
-#: program.py:175
+#: program.py:172
 msgid "Theme"
 msgstr "Theme"
 
-#: program.py:176
+#: program.py:173
 msgid "Select color theme application"
 msgstr "Select color theme application"
 
-#: program.py:180
+#: program.py:177
 msgid "Language"
 msgstr "Language"
 
-#: program.py:181
+#: program.py:178
 msgid "Choose your language"
 msgstr "Choose your language"
 
-#: uix/customsettings.py:152
+#: uix/customsettings.py:36
+msgid "Pink"
+msgstr "Pink"
+
+#: uix/customsettings.py:37
+msgid "Blue"
+msgstr "Blue"
+
+#: uix/customsettings.py:38
+msgid "Indigo"
+msgstr "Indigo"
+
+#: uix/customsettings.py:39
+msgid "BlueGrey"
+msgstr "BlueGrey"
+
+#: uix/customsettings.py:40
+msgid "Brown"
+msgstr "Brown"
+
+#: uix/customsettings.py:41
+msgid "LightBlue"
+msgstr "LightBlue"
+
+#: uix/customsettings.py:42
+msgid "Purple"
+msgstr "Purple"
+
+#: uix/customsettings.py:43
+msgid "Grey"
+msgstr "Grey"
+
+#: uix/customsettings.py:44
+msgid "Yellow"
+msgstr "Yellow"
+
+#: uix/customsettings.py:45
+msgid "LightGreen"
+msgstr "LightGreen"
+
+#: uix/customsettings.py:46
+msgid "DeepOrange"
+msgstr "DeepOrange"
+
+#: uix/customsettings.py:47
+msgid "Green"
+msgstr "Green"
+
+#: uix/customsettings.py:48
+msgid "Red"
+msgstr "Red"
+
+#: uix/customsettings.py:49
+msgid "Teal"
+msgstr "Teal"
+
+#: uix/customsettings.py:50
+msgid "Orange"
+msgstr "Orange"
+
+#: uix/customsettings.py:51
+msgid "Cyan"
+msgstr "Cyan"
+
+#: uix/customsettings.py:52
+msgid "Amber"
+msgstr "Amber"
+
+#: uix/customsettings.py:53
+msgid "DeepPurple"
+msgstr "DeepPurple"
+
+#: uix/customsettings.py:54
+msgid "Lime"
+msgstr "Lime"
+
+#: uix/customsettings.py:55
+msgid "Light"
+msgstr "Light"
+
+#: uix/customsettings.py:56
+msgid "Dark"
+msgstr "Dark"
+
+#: uix/customsettings.py:233
+msgid "Cancel"
+msgstr "Cancel"
+
+#: uix/customsettings.py:291
 msgid "Header"
 msgstr "Header"
 
-#: uix/customsettings.py:153
+#: uix/customsettings.py:292
 msgid "Yes"
 msgstr "Yes"
 
-#: uix/customsettings.py:154
+#: uix/customsettings.py:293
 msgid "No"
 msgstr "No"
 
@@ -74,3 +162,19 @@ msgstr "Goals"
 #: uix/kvs/startscreen.kv:43
 msgid "Not goals"
 msgstr "Not goals"
+
+#: uix/kvs/theme_picker_localized.kv:25
+msgid "Close"
+msgstr "Close"
+
+#: uix/kvs/theme_picker_localized.kv:29
+msgid "Change theme"
+msgstr "Change theme"
+
+#: uix/kvs/theme_picker_localized.kv:42
+msgid "Theme Color"
+msgstr "Theme Color"
+
+#: uix/kvs/theme_picker_localized.kv:327
+msgid "Theme Style"
+msgstr "Theme Style"
