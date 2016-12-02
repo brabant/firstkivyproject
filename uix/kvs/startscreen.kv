@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+#:kivy 1.9.1
+#:import _ localization._
+#:import Toolbar kivymd.toolbar.Toolbar
+#:import MDTabbedPanel kivymd.tabs.MDTabbedPanel
+#:import MDTab kivymd.tabs.MDTab
+#:import EmptyScreen uix.emptyscreen.EmptyScreen
+
+<StartScreen>
+    BoxLayout:
+        orientation: 'vertical'
+        Toolbar:
+            id: action_bar
+            background_color: app.theme_cls.primary_color
+            title: 'StartScreen'
+            left_action_items: [['menu', lambda x: app.nav_drawer.toggle()]]
+        ScreenManager:
+            id: screen_root_manager
+            Screen:
+                name: 'root_screen'
+                MDTabbedPanel:
+                    id: tabs
+                    tab_display_mode: 'text'
+#                    tab_indicator_color: app.data.tab_indicator_color
+#                    tab_color: app.theme_cls.primary_dark
+
+                    MDTab:
+                        name: 'behaviours'
+                        text: _('Behaviours')
+#                        on_tab_press: app.on_tab_press(self.name)
+# Пустой экран
+                        EmptyScreen:
+                            id: screen_manager_tab_behaviours
+                            text: _('Not behaviours')
+                            callback: lambda: app.go('create_behaviour')
+                            disabled: False
+                    MDTab:
+                        name: 'goals'
+                        text: _('Goals')
+#                        on_tab_press: app.on_tab_press(self.name)
+                        EmptyScreen:
+                            id: screen_manager_tab_goals
+                            text: _('Not goals')
+                            callback: lambda: app.go('create_goal')
+                            disabled: False

@@ -1,0 +1,13 @@
+#:kivy 1.9.1
+#:import _ localization._
+
+
+<NavDrawer>:
+	NavigationDrawerIconButton:
+		icon: 'settings'
+		text:  _('Settings')
+		on_release: (lambda: app.on_event('settings'))()
+	NavigationDrawerIconButton:
+		icon: 'close-circle'
+		text: _('Exit')
+		on_release: (lambda: app.on_event('exit'))()

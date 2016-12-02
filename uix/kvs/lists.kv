@@ -1,0 +1,63 @@
+#:kivy 1.9.1
+#:import MDList kivymd.list.MDList
+
+<RightButton>:
+    size_hint_x: None
+    size_hint_y: None
+    size: 30, 30
+
+<CheckItem>:
+    on_press: root.events_callback(root.id, self.state, 'item')
+    CheckWidget:
+        id: root.id
+        active: root.active
+        on_press: root.events_callback(root.id, self.state, 'check')
+
+<SwitchItem>:
+    on_press: root.events_callback(root.id, self.state, 'item')
+    LeftIcon:
+        source: root.icon
+    SwitchWidget:
+        id: root.id
+        size_hint:    None, None
+        size:        dp(36), dp(48)
+        pos_hint:    {'center_x': 0.75, 'center_y': 0.5}
+        active:        False
+
+<IconItemThree>:
+    id: avatar
+    on_press: root.events_callback(root.id, 'item')
+    LeftIcon:
+        source: root.icon
+
+<IconItem>:
+    id: avatar
+    on_press: root.events_callback(root.id, 'item')
+    LeftIcon:
+        source: root.icon
+
+<SingleIconItem>:
+    on_press: root.events_callback(self.text)
+    LeftMDIcon:
+        icon: root.icon
+        disabled: True
+
+#<OneLineChekboxListItem>
+#    IconLeftCheckboxWidget:
+#        id: checkbox
+
+<Item>:
+    on_press: root.events_callback(self.text)
+
+<Lists>:
+    padding: 5
+    ScrollView:
+        do_scroll_x: False
+        MDList:
+            id: list_items
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 0
+                Rectangle:
+                    pos: self.pos
+                    size: self.size

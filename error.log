@@ -1,34 +1,16 @@
 Traceback (most recent call last):
-  File "/media/sergey/92182B13182AF5BF/kivy/simple/main.py", line 35, in main
-    app.run()
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/app.py", line 828, in run
-    runTouchApp()
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/base.py", line 487, in runTouchApp
-    EventLoop.window.mainloop()
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/core/window/window_sdl2.py", line 619, in mainloop
-    self._mainloop()
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/core/window/window_sdl2.py", line 362, in _mainloop
-    EventLoop.idle()
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/base.py", line 330, in idle
-    self.dispatch_input()
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/base.py", line 315, in dispatch_input
-    post_dispatch_input(*pop(0))
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/base.py", line 281, in post_dispatch_input
-    wid.dispatch('on_touch_up', me)
-  File "kivy/_event.pyx", line 718, in kivy._event.EventDispatcher.dispatch (/tmp/pip-build-qe3cehiv/kivy/kivy/_event.c:7699)
-  File "/var/env/kivy/lib/python3.5/site-packages/kivymd/ripplebehavior.py", line 68, in on_touch_up
-    return super(CommonRipple, self).on_touch_up(touch)
-  File "/var/env/kivy/lib/python3.5/site-packages/kivymd/button.py", line 315, in on_touch_up
-    return super(BaseRaisedButton, self).on_touch_up(touch)
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/uix/behaviors/button.py", line 138, in on_touch_up
-    self.dispatch('on_release')
-  File "kivy/_event.pyx", line 714, in kivy._event.EventDispatcher.dispatch (/tmp/pip-build-qe3cehiv/kivy/kivy/_event.c:7654)
-  File "kivy/_event.pyx", line 1224, in kivy._event.EventObservers.dispatch (/tmp/pip-build-qe3cehiv/kivy/kivy/_event.c:13497)
-  File "kivy/_event.pyx", line 1108, in kivy._event.EventObservers._dispatch (/tmp/pip-build-qe3cehiv/kivy/kivy/_event.c:12329)
-  File "/var/env/kivy/lib/python3.5/site-packages/kivy/lang.py", line 1557, in custom_callback
-    exec(__kvlang__.co_value, idmap)
-  File "/media/sergey/92182B13182AF5BF/kivy/simple/uix/kvs/emptyscreen.kv", line 31, in <module>
-    on_release: root.callback()
-  File "/media/sergey/92182B13182AF5BF/kivy/simple/uix/kvs/startscreen.kv", line 32, in <lambda>
-    callback: lambda: app.go('create_behavoir')
-TypeError: go() takes 1 positional argument but 2 were given
+  File "C:/kivy/firstkivyproject/__init__.py", line 31, in main
+    from program import Program  # основной класс программы
+  File "C:\kivy\firstkivyproject\program.py", line 27, in <module>
+    from uix.customsettings import CustomSettings
+  File "C:\kivy\firstkivyproject\uix\customsettings.py", line 19, in <module>
+    from uix.theme_picker_localized import MDThemePickerLocalized
+  File "C:\kivy\firstkivyproject\uix\theme_picker_localized.py", line 15, in <module>
+    Builder.load_file(os.path.join(os.path.dirname(__file__), 'kvs', 'theme_picker_localized.kv'))
+  File "C:\Python34\env\behavior\lib\site-packages\kivy\lang.py", line 1842, in load_file
+    return self.load_string(data, **kwargs)
+  File "C:\Python34\env\behavior\lib\site-packages\kivy\lang.py", line 1920, in load_string
+    widget = Factory.get(parser.root.name)()
+  File "C:\Python34\env\behavior\lib\site-packages\kivy\factory.py", line 130, in __getattr__
+    raise AttributeError
+AttributeError

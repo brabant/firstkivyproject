@@ -1,0 +1,9 @@
+#:kivy 1.9.1
+#:import Toolbar kivymd.toolbar.Toolbar
+
+<SaveCancelToolbar>:
+    id: save_cancel_action_bar
+    background_color: app.theme_cls.primary_color
+    title: self.title
+    left_action_items: [['arrow-left', app.cancel]]
+    right_action_items: [['content-save', app.save]]

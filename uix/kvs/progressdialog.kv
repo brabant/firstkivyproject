@@ -1,0 +1,39 @@
+#: kivy 1.9.1
+#: import MDFlatButton kivymd.button.MDFlatButton
+#: import MDSpinner kivymd.spinner.MDSpinner
+#: import MDProgressBar kivymd.progressbar.MDProgressBar
+#: import MDCard kivymd.card.MDCard
+
+[Progress@ModalView]:
+    size_hint: .8, .4
+    background_color: 0, 0, 0, .2
+    auto_dismiss: False
+
+    MDCard:
+        BoxLayout:
+            orientation: 'vertical'
+            padding: dp(0), dp(10)
+
+            Widget:
+
+            MDSpinner:
+                id: progress
+                size_hint: None, None
+                size: dp(46), dp(46)
+                pos_hint: {'center_x': .5}
+                active: True
+
+            Label:
+                id: label
+                text: ctx.text_wait
+                markup: True
+                halign: 'center'
+                size_hint_y: None
+                height: dp(50)
+
+            Widget:
+
+            MDFlatButton:
+                text: ctx.text_button_cancel
+                pos_hint: {'center_x': .5}
+                on_release: ctx.events_callback(ctx.text_button_cancel)

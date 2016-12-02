@@ -1,0 +1,28 @@
+#:kivy 1.9.1
+#:import MDLabel kivymd.label.MDLabel
+#:import MDFloatingActionButton kivymd.button.MDFloatingActionButton
+
+<EmptyScreen>:
+    id: empty_screen
+    Image:
+        source: root.image
+        pos_hint: {'center_x': .5, 'center_y': .6}
+        opacity: .5
+
+    MDLabel:
+        id: label
+        font_style: 'Headline'
+        theme_text_color: 'Primary'
+        text: root.text
+        halign: 'center'
+
+    MDFloatingActionButton:
+        id: float_act_btn
+        icon: 'plus'
+        size_hint: None, None
+        size: dp(56), dp(56)
+        opposite_colors: True
+        elevation_normal: 8
+        pos_hint: {'center_x': .9, 'center_y': .1}
+        disabled: root.disabled
+        on_release: root.callback()

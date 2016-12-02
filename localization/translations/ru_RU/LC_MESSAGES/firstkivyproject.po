@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-12-02 11:25+0300\n"
+"PO-Revision-Date: 2016-12-02 11:34+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .idea\n"
+"X-Poedit-SearchPathExcluded-1: __pycache__\n"
+
+#: program.py:153
+msgid "First Kivy Project"
+msgstr "Первое приложение Kivy"
+
+#: program.py:170
+msgid "General settings"
+msgstr "Основные настройки"
+
+#: program.py:172
+msgid "Theme"
+msgstr "Тема"
+
+#: program.py:173
+msgid "Select color theme application"
+msgstr "Выберите цветовую схему приложения"
+
+#: program.py:177
+msgid "Language"
+msgstr "Язык"
+
+#: program.py:178
+msgid "Choose your language"
+msgstr "Выберите язык"
+
+#: uix/customsettings.py:36
+msgid "Pink"
+msgstr "Розовый"
+
+#: uix/customsettings.py:37
+msgid "Blue"
+msgstr "Синий"
+
+#: uix/customsettings.py:38
+msgid "Indigo"
+msgstr "Индиго"
+
+#: uix/customsettings.py:39
+msgid "BlueGrey"
+msgstr "Серо-голубой"
+
+#: uix/customsettings.py:40
+msgid "Brown"
+msgstr "Коричневый"
+
+#: uix/customsettings.py:41
+msgid "LightBlue"
+msgstr "Голубой"
+
+#: uix/customsettings.py:42
+msgid "Purple"
+msgstr "Фиолетовый"
+
+#: uix/customsettings.py:43
+msgid "Grey"
+msgstr "Серый"
+
+#: uix/customsettings.py:44
+msgid "Yellow"
+msgstr "Желтый"
+
+#: uix/customsettings.py:45
+msgid "LightGreen"
+msgstr "Салатовый"
+
+#: uix/customsettings.py:46
+msgid "DeepOrange"
+msgstr "Глубокий оранжевый"
+
+#: uix/customsettings.py:47
+msgid "Green"
+msgstr "Зеленый"
+
+#: uix/customsettings.py:48
+msgid "Red"
+msgstr "Красный"
+
+#: uix/customsettings.py:49
+msgid "Teal"
+msgstr "Чирок"
+
+#: uix/customsettings.py:50
+msgid "Orange"
+msgstr "Оранжевый"
+
+#: uix/customsettings.py:51
+msgid "Cyan"
+msgstr "Голубой"
+
+#: uix/customsettings.py:52
+msgid "Amber"
+msgstr "Янтарный"
+
+#: uix/customsettings.py:53
+msgid "DeepPurple"
+msgstr "Пурпурный"
+
+#: uix/customsettings.py:54
+msgid "Lime"
+msgstr "Лимонный"
+
+#: uix/customsettings.py:55
+msgid "Light"
+msgstr "Светлый"
+
+#: uix/customsettings.py:56
+msgid "Dark"
+msgstr "Темный"
+
+#: uix/customsettings.py:227
+msgid "Cancel"
+msgstr "Отменить"
+
+#: uix/customsettings.py:285
+msgid "Header"
+msgstr "Заголовок"
+
+#: uix/customsettings.py:286
+msgid "Yes"
+msgstr "Да"
+
+#: uix/customsettings.py:287
+msgid "No"
+msgstr "Нет"
+
+#: uix/kvs/navdrawer.kv:8
+msgid "Settings"
+msgstr "Настройки"
+
+#: uix/kvs/navdrawer.kv:12
+msgid "Exit"
+msgstr "Выход"
+
+#: uix/kvs/startscreen.kv:29
+msgid "Behaviours"
+msgstr "Оценки"
+
+#: uix/kvs/startscreen.kv:34
+msgid "Not behaviours"
+msgstr "Нет оценок"
+
+#: uix/kvs/startscreen.kv:39
+msgid "Goals"
+msgstr "Цели"
+
+#: uix/kvs/startscreen.kv:43
+msgid "Not goals"
+msgstr "Нет целей"
+
+#: uix/kvs/theme_picker_localized.kv:25
+msgid "Close"
+msgstr "Закрыть"
+
+#: uix/kvs/theme_picker_localized.kv:29
+msgid "Change theme"
+msgstr "Выберите тему"
+
+#: uix/kvs/theme_picker_localized.kv:42
+msgid "Theme Color"
+msgstr "Основной цвет"
+
+#: uix/kvs/theme_picker_localized.kv:327
+msgid "Theme Style"
+msgstr "Стиль"

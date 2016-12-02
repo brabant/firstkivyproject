@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-11-29 09:41+0300\n"
+"PO-Revision-Date: 2016-11-29 09:41+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: localization/.idea\n"
+
+#: program.py:156
+msgid "First Kivy Project"
+msgstr "First Kivy Project"
+
+#: program.py:173
+msgid "General settings"
+msgstr "General settings"
+
+#: program.py:175
+msgid "Theme"
+msgstr "Theme"
+
+#: program.py:176
+msgid "Select color theme application"
+msgstr "Select color theme application"
+
+#: program.py:180
+msgid "Language"
+msgstr "Language"
+
+#: program.py:181
+msgid "Choose your language"
+msgstr "Choose your language"
+
+#: uix/customsettings.py:152
+msgid "Header"
+msgstr "Header"
+
+#: uix/customsettings.py:153
+msgid "Yes"
+msgstr "Yes"
+
+#: uix/customsettings.py:154
+msgid "No"
+msgstr "No"
+
+#: uix/kvs/navdrawer.kv:8
+msgid "Settings"
+msgstr "Settings"
+
+#: uix/kvs/navdrawer.kv:12
+msgid "Exit"
+msgstr "Exit"
+
+#: uix/kvs/startscreen.kv:29
+msgid "Behaviours"
+msgstr "Behaviours"
+
+#: uix/kvs/startscreen.kv:34
+msgid "Not behaviours"
+msgstr "Not behaviours"
+
+#: uix/kvs/startscreen.kv:39
+msgid "Goals"
+msgstr "Goals"
+
+#: uix/kvs/startscreen.kv:43
+msgid "Not goals"
+msgstr "Not goals"
