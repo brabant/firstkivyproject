@@ -7,14 +7,15 @@ from kivy.lang import Builder
 from kivy.uix.modalview import ModalView
 from kivy.uix.floatlayout import FloatLayout
 from kivymd.theming import ThemableBehavior
-from kivymd.elevationbehavior import ElevationBehavior
+from kivymd.elevationbehavior import RectangularElevationBehavior
 from kivy.properties import ObjectProperty, ListProperty
 from kivy.utils import get_color_from_hex
 from kivymd.color_definitions import colors
 
 Builder.load_file(os.path.join(os.path.dirname(__file__), 'kvs', 'theme_picker_localized.kv'))
 
-class MDThemePickerLocalized(ThemableBehavior, FloatLayout, ModalView, ElevationBehavior):
+
+class MDThemePickerLocalized(ThemableBehavior, FloatLayout, ModalView, RectangularElevationBehavior):
     time = ObjectProperty()
 
     def __init__(self, **kwargs):

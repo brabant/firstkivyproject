@@ -19,7 +19,7 @@ class ObservableTranslation(Observable):
         :param translate: a callable that translates the text. Even when the
           localization is changed, it returns the text for the currrent localization.
         """
-        super().__init__()
+        super(ObservableTranslation, self).__init__()
         self._translate = translate
         self._observers = []
 

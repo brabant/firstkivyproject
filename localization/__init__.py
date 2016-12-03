@@ -61,7 +61,7 @@ def list_languages():
       passed as an argument to :func:`change_language_to`
     :rtype: list
     """
-    return _supported_languages.copy()
+    return list(_supported_languages)
 
 
 def language_code_to_translation(language_code):

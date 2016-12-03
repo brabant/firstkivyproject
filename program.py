@@ -19,8 +19,8 @@ from kivy.lang import Observable
 from kivy.metrics import dp
 from kivy.config import ConfigParser
 
-from kivymd.label import MDLabel
-from kivymd.dialog import MDDialog
+# from kivymd.label import MDLabel
+# from kivymd.dialog import MDDialog
 from kivymd.theming import ThemeManager
 from uix.startscreen import StartScreen
 from uix.navdrawer import NavDrawer
