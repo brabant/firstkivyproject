@@ -13,7 +13,7 @@ package.domain = ru.vyksaplus
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,ini,json,txt,xcf,rst,mo
+source.include_exts = py,png,jpg,gif,kv,ini,json,txt,xcf,rst,mo
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = data/images/*,data/language/*,data/settings/*,data/themes/default/*
@@ -36,7 +36,7 @@ version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = kivy,kivymd
+requirements = kivy,kivymd,Pygments
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -46,7 +46,7 @@ requirements = kivy,kivymd
 #garden_requirements =
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/assets/logo.png
+presplash.filename = %(source.dir)s/assets/presplash.gif
 
 # (str) Icon of the application
 icon.filename = %(source.dir)s/assets/logo.png

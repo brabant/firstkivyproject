@@ -14,7 +14,7 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.lang import Observable
 # from kivy.clock import Clock
-# from kivy.uix.rst import RstDocument
+from kivy.uix.rst import RstDocument
 
 from kivy.metrics import dp
 from kivy.config import ConfigParser
@@ -54,7 +54,7 @@ class Program(App):
     def build(self):
         # self.set_language('en_US')
         self.use_kivy_settings = False
-        self.title = 'FirstKivyProject'  # заголовок окна программы
+        self.title = _('First Kivy Project')  # заголовок окна программы
         self.icon = 'assets/logo.png'  # иконка окна программы
         self.settings_cls = CustomSettings
         self.update_language_from_config()
@@ -107,25 +107,22 @@ class Program(App):
             return
 
         self.exit_dialog = dialog(
-            text='Вы действительно хотите выйти?', title="Выйти", dismiss=False,
+            text=_('Do you want to quit?'), title=_("Exit"), dismiss=False,
             buttons=[
-                ["Да", lambda *x: sys.exit(0)],
-                ["Нет", lambda *x: close_dialog()]
+                [_("Yes"), lambda *x: sys.exit(0)],
+                [_("No"), lambda *x: close_dialog()]
             ]
         )
 
-    # def show_license(self):
-    #     path_to_license = os.path.join(ROOT_DIR, 'assets', 'license_russian.rst')
-    #     if not os.path.exists(path_to_license):
-    #         dialog(text='Файл лицензии отсутствует', title=self.title)
-    #         # dialog.dismiss()
-    #         return
-    #
-    #     text_license = open(path_to_license, encoding='utf-8').read()
-    #     widget_license = RstDocument(text=text_license)
-    #     card(widget_license, size=(.9, .8))
-        # dialog.dismiss()
+    def show_license(self):
+        path_to_license = os.path.join(dir, 'assets', 'license_russian.rst')
+        if not os.path.exists(path_to_license):
+            dialog(text=_('File not found'), title=self.title)
+            return
 
+        text_license = open(path_to_license).read()
+        widget_license = RstDocument(text=text_license)
+        card(widget_license, size=(.9, .8))
 
     def on_pause(self):
         # Here you can save data if needed
@@ -143,11 +140,11 @@ class Program(App):
 
     def build_config(self, config):
         config.setdefaults('general', {
-                                'theme': 'Teal,Light'
-                           })
+            'theme': 'Teal,Light'
+        })
         config.setdefaults(LANGUAGE_SECTION, {
-                                LANGUAGE_CODE: current_language()
-                           })
+            LANGUAGE_CODE: current_language()
+        })
 
     def build_settings(self, settings):
         settings.add_json_panel(_('First Kivy Project'), self.config,

@@ -8,6 +8,10 @@
 		text:  _('Settings')
 		on_release: (lambda: app.on_event('settings'))()
 	NavigationDrawerIconButton:
+		icon: 'information'
+		text:  _('About')
+		on_release: (lambda: app.on_event('about'))()
+	NavigationDrawerIconButton:
 		icon: 'close-circle'
 		text: _('Exit')
 		on_release: (lambda: app.on_event('exit'))()

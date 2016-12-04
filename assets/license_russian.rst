@@ -1,13 +1,8 @@
-[color=78a5a3ff]MIT LICENSE
+ [color=78a5a3ff]MIT LICENSE
 ---------------------------
-
-.. image:: license/open-source-logo.png
-   :align: center
 
 [color=78a5a3ff]
 Copyright (c) 2016 None
-
-Русские буквы
 
 [color=#000]Permission is hereby granted, free of charge, to any person obtaining
 a copy of this [color=78a5a3ff]Software [color=#000]and associated documentationfiles
