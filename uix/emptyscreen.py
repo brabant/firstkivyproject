@@ -11,7 +11,7 @@ Builder.load_file(os.path.join(os.path.dirname(__file__), 'kvs', 'emptyscreen.kv
 
 class EmptyScreen(FloatLayout):
     callback = ObjectProperty(lambda: None)
-    image = StringProperty()
+    # image = StringProperty()
     text = StringProperty()
     disabled = BooleanProperty()
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-12-02 11:25+0300\n"
-"PO-Revision-Date: 2016-12-02 11:34+0300\n"
+"POT-Creation-Date: 2016-12-04 14:41+0300\n"
+"PO-Revision-Date: 2016-12-04 14:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -17,27 +17,47 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: .idea\n"
 "X-Poedit-SearchPathExcluded-1: __pycache__\n"
 
-#: program.py:153
+#: program.py:57 program.py:150
 msgid "First Kivy Project"
 msgstr "Первое приложение Kivy"
 
-#: program.py:170
+#: program.py:110
+msgid "Do you want to quit?"
+msgstr "Вы хотите выйти?"
+
+#: program.py:110 uix/kvs/navdrawer.kv:16
+msgid "Exit"
+msgstr "Выход"
+
+#: program.py:112 uix/customsettings.py:292
+msgid "Yes"
+msgstr "Да"
+
+#: program.py:113 uix/customsettings.py:293
+msgid "No"
+msgstr "Нет"
+
+#: program.py:120
+msgid "File not found"
+msgstr "Файл не найден"
+
+#: program.py:167
 msgid "General settings"
 msgstr "Основные настройки"
 
-#: program.py:172
+#: program.py:169
 msgid "Theme"
 msgstr "Тема"
 
-#: program.py:173
+#: program.py:170
 msgid "Select color theme application"
 msgstr "Выберите цветовую схему приложения"
 
-#: program.py:177
+#: program.py:174
 msgid "Language"
 msgstr "Язык"
 
-#: program.py:178
+#: program.py:175
 msgid "Choose your language"
 msgstr "Выберите язык"
 
@@ -125,29 +145,21 @@ msgstr "Светлый"
 msgid "Dark"
 msgstr "Темный"
 
-#: uix/customsettings.py:227
+#: uix/customsettings.py:233
 msgid "Cancel"
 msgstr "Отменить"
 
-#: uix/customsettings.py:285
+#: uix/customsettings.py:291
 msgid "Header"
 msgstr "Заголовок"
-
-#: uix/customsettings.py:286
-msgid "Yes"
-msgstr "Да"
-
-#: uix/customsettings.py:287
-msgid "No"
-msgstr "Нет"
 
 #: uix/kvs/navdrawer.kv:8
 msgid "Settings"
 msgstr "Настройки"
 
 #: uix/kvs/navdrawer.kv:12
-msgid "Exit"
-msgstr "Выход"
+msgid "About"
+msgstr "О программе"
 
 #: uix/kvs/startscreen.kv:29
 msgid "Behaviours"

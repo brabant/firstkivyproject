@@ -105,6 +105,7 @@ class SingleIconItem(OneLineIconListItem):
 class IconLeftCheckboxWidget(ILeftBodyTouch, MDCheckbox):
     pass
 
+
 class OneLineChekboxListItem(OneLineAvatarListItem):
     state = ObjectProperty(None)
     group = ObjectProperty(None)

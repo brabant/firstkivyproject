@@ -8,36 +8,23 @@ kivy.require('1.9.1')
 import os
 import sys
 import json
-import gettext
 from kivy.app import App
-from kivy.lang import Builder
 from kivy.core.window import Window
-from kivy.lang import Observable
-# from kivy.clock import Clock
 from kivy.uix.rst import RstDocument
-
-from kivy.metrics import dp
-from kivy.config import ConfigParser
-
-# from kivymd.label import MDLabel
-# from kivymd.dialog import MDDialog
 from kivymd.theming import ThemeManager
+
 from uix.startscreen import StartScreen
 from uix.navdrawer import NavDrawer
 from uix.customsettings import CustomSettings
 from uix.dialogs import dialog, card
-# from uix.dialogs import dialog
 from localization import _, list_languages, change_language_to, \
     current_language, language_code_to_translation
-
 
 DOMAIN = 'firstkivyproject'
 LANGUAGE_CODE = "current"  #: the language code name
 LANGUAGE_SECTION = "language"  #: the language section name
 dir = os.path.dirname(__file__)
 language_dir = os.path.join(dir, 'localization', 'translations')
-
-# gettext.bindtextdomain(APP_NAME, LANGUAGE_DIR)
 
 
 class Program(App):
